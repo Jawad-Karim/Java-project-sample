@@ -10,14 +10,10 @@ public class Check_contains_a_value_in_Array {
 		int searchItem = 90;
 
 		for(int i=0; i<myNum.length; i++) {
-
 			if(myNum[i] == searchItem) {
 				System.out.println("array contains : "+searchItem);
-
 				break;
 			}
 		}
-
 	}
-
 }

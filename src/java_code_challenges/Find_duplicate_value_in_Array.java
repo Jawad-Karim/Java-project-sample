@@ -10,14 +10,10 @@ public class Find_duplicate_value_in_Array {
 
 		for (int i = 0; i < my_array2.length-1; i++){
 			for (int j = i+1; j < my_array2.length; j++){
-
 				if ((my_array2[i] == my_array2[j])){
-
 					System.out.println("Duplicate Element : "+my_array2[j]);
 				}
 			}
 		}
-
 	}
-
 }

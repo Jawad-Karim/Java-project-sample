@@ -11,6 +11,4 @@ public class Student {
 		this.age = age;
 		this.id = id;
 	}
-
-
 }

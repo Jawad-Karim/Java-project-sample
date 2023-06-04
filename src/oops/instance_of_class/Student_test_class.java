@@ -15,9 +15,7 @@ public class Student_test_class {
 		System.out.println(list);
 
 		for(Student student : list) {		
-			System.out.println("name : "+student.name+"   age : "+student.age+"   ID : "+student.id);		}
-
-
+			System.out.println("name : "+student.name+"   age : "+student.age+"   ID : "+student.id);
+		}
 	}
-
 }

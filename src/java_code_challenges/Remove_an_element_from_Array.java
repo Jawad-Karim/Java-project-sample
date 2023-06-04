@@ -13,11 +13,8 @@ public class Remove_an_element_from_Array {
 
 		int removeItem = 60;
 		for(int i=0; i<myNum1.length; i++) {
-
 			if(myNum1[i] == removeItem) {
-
 				for(int j=i; j<myNum1.length-1; j++) {
-
 					myNum1[j] = myNum1[j+1];
 				}
 				break;
@@ -25,8 +22,5 @@ public class Remove_an_element_from_Array {
 		}
 		// last item will be twice because array is fixed length;
 		System.out.println("array after removing item : "+ Arrays.toString(myNum1));
-
-
 	}
-
 }

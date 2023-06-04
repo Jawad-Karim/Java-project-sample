@@ -9,7 +9,5 @@ public class TestClass {
 		
 		Play p = Play.getPlay();
 		p.myWork();
-
 	}
-
 }

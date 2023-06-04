@@ -12,30 +12,21 @@ public class Binary_search {
 		int middle;
 
 		for(int i=firstIndex; i<lastIndex; i++) {
-
 			middle = (firstIndex+lastIndex)/2;
-
 			if(search_item == arr[middle]) {
-
 				System.out.println("search item "+arr[middle]+" found at index "+middle);
-
 				break;
 			}
-
 			else if(search_item > arr[middle]) {
 				firstIndex = middle+1;
 			}
-
 			else {
 				lastIndex = middle-1;
 			}
-
-
 		}
 	}
 
 	public static void main(String[] args) {
-
 		searchItem(60);
 
 	}

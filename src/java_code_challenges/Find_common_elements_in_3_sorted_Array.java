@@ -17,9 +17,8 @@ public class Find_common_elements_in_3_sorted_Array {
 
 		while (x < arr1.length && y < arr2.length && z < arr3.length){
 			if (arr1[x] == arr2[y] && arr2[y] == arr3[z]){
-
+				
 				common.add(arr1[x]);
-
 				x++;
 				y++;
 				z++;
@@ -32,7 +31,5 @@ public class Find_common_elements_in_3_sorted_Array {
 				z++;
 		}
 		System.out.println("Common elements from three sorted  arrays : " + common);
-
 	}
-
 }
