@@ -28,5 +28,4 @@ public class FindTheStringBetweenTowStrings {
 		System.out.println(toast1+" "+ toast2);
 		System.out.println(str1.substring(toast1, toast2));
 	}
-
 }
