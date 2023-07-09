@@ -25,6 +25,15 @@ public class ReverseEachWordsOfString {
 		sb.reverse();
 		s = sb.toString();
 		System.out.println("after reversing: "+ s);
+	
+// reverse a number		
+		int n = 1234;	
+		StringBuffer sb2 = new StringBuffer(String.valueOf(n));
+		sb2.reverse();
+		System.out.println(sb2); //output: 4321
 		
+		//back to integer
+		int i = Integer.parseInt(String.valueOf(sb2));
+		System.out.println(sb2); //output: 4321
 	}
 }
