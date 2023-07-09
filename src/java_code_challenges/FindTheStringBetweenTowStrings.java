@@ -6,6 +6,7 @@ public class FindTheStringBetweenTowStrings {
 	public static void main(String[] args) {
 
 		String str1 =  "sweettoastbuttertoast";
+		System.out.println(str1.contains("toast"));
 		String sub = str1.substring(5,10);
 		System.out.println(sub);
 
