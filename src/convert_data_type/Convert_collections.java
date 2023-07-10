@@ -46,6 +46,8 @@ public class Convert_collections {
 			arr2[i] = list4.get(i);
 		}
 		System.out.println(Arrays.toString(arr2));
+		
+		Object[] obj = list4.toArray();
 
 		// Set to Array, ArrayList ************************************
 		Set<String> set = new HashSet<String>();
