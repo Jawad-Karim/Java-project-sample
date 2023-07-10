@@ -40,6 +40,10 @@ public class String_to_otherType {
 		String s2 = "true";
 		boolean b = Boolean.parseBoolean(s2);
 		System.out.println(b);
+		
+		StringBuffer sb = new StringBuffer(s);
+		StringBuilder sb2 = new StringBuilder(s);
+		System.out.println(sb2);
 	}
 
 }

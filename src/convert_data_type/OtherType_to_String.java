@@ -39,5 +39,10 @@ public class OtherType_to_String {
 			s8 += array[j];
 		}
 		System.out.println("long to String: "+ s8);
+		
+		StringBuffer sb = new StringBuffer("Hello");
+		String s9 = String.valueOf(sb);
+		//String s9 = sb.toString();
+		System.out.println(s9);
 	}
 }
