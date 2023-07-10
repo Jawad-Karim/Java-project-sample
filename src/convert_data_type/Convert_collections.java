@@ -13,7 +13,7 @@ public class Convert_collections {
 		// array to ArrayList ******************************** 
 		String[] names = {"john", "don", "mark", "paul"};
 		ArrayList<String> list1 = new ArrayList<>(Arrays.asList(names));
-		System.out.println(list1);		
+		System.out.println(list1);	
 
 		int[] nums = {10, 20, 30, 40};
 		ArrayList<Integer> list2 = new ArrayList<>();
@@ -74,8 +74,8 @@ public class Convert_collections {
 		list5.add(2);
 		list5.add(3);
 		
-		Set<String> set2 = new HashSet<>();
-		Collections.addAll(set2, arr3);
+		Set<Integer> set2 = new HashSet<>();
+		for(Integer num : list5) set2.add(num);
 		System.out.println(set2);
 	}
 }
