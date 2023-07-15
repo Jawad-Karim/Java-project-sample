@@ -1,5 +1,8 @@
 package java_code_challenges;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FiboncciSeriesAndPrime {
 
 	public static void main(String[] args) {
@@ -8,15 +11,17 @@ public class FiboncciSeriesAndPrime {
 		int n1 = 0;
 		int n2 = 1;
 		int sum = 0;
-		System.out.print(n1+" "+n2);
+		List<Integer> fibonacci = new ArrayList<Integer>();
+		fibonacci.add(n1);
+		fibonacci.add(n2);
+		
 		for(int i=2; i<10; i++) {
 			sum = n1+n2;
-			System.out.print(" "+sum); 
+			fibonacci.add(sum);
 			n1 = n2;
 			n2 = sum;
-			//outcome: 0 1 1 2 3 5 8 13 21 34
 		}
-		System.out.println();
+		System.out.println(fibonacci);
 
 //Prime number is greater than 1 and that has two factors only 1 and itself.
 		int n = 11;
