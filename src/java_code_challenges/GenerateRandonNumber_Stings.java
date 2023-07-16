@@ -8,7 +8,7 @@ public class GenerateRandonNumber_Stings {
 //approach 1
 		Random rand = new Random();
 		int n = rand.nextInt(10); 	// 0-9
-		double d = rand.nextDouble();	// 0.0 - less than 1.0		
+		double d = rand.nextDouble();	// 0.0 - less than 1.0
 		System.out.println(n+"\n"+d);
 		
 //approach 2

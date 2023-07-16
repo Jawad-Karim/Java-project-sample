@@ -7,7 +7,7 @@ public class FindMaxAndMinValueInArray {
 		int[] arr = {30, 20, 70, 90, 10, 5, 95};
 
 		int max = arr[0];
-		for(int i=0; i<arr.length; i++) {
+		for(int i=1; i<arr.length; i++) {
 			if(arr[i]>max) {
 				max = arr[i];
 			}
@@ -15,7 +15,7 @@ public class FindMaxAndMinValueInArray {
 		System.out.println("max value is: "+max);
 
 		int min = arr[0];
-		for(int i=0; i<arr.length; i++) {
+		for(int i=1; i<arr.length; i++) {
 			if(arr[i]<min) {
 				min = arr[i];
 			}

@@ -6,7 +6,8 @@ public class FindLargestNumber {
 		
 		int a=10;
 		int b=20; 
-		int c=30;		
+		int c=30;	
+		
 //approach 1
 		if(a>b && a>c) {
 			System.out.println("a: "+a+" is the largest number");

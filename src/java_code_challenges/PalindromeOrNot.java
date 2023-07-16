@@ -27,7 +27,7 @@ public class PalindromeOrNot {
 		for(int i=s.length()-1; i>=0; i--) {
 			rvrs += s.charAt(i);
 		}
-		System.out.println(rvrs); //outcome: emocleW
+		System.out.println(rvrs.equals(s)?"s is palindrome" : "s is not palindrome"); //outcome: emocleW
 
 // count number of digits
 		int num1 = 165375;
@@ -38,7 +38,7 @@ public class PalindromeOrNot {
 		}
 		System.out.println(count);
 		
-// count number of digits
+// sum of digits
 		int num2 = 165375;
 		int sum = 0;
 		while(num2>0) {

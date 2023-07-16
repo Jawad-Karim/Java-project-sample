@@ -14,7 +14,7 @@ public class FindTheStringBetweenTowStrings {
 		int toast2 = 0;
 
 		for(int i=0; i<str1.length()-4; i++) {
-			if(str1.substring(i, i+5).equals("toast")) {
+			if(str1.substring(i, i+5).equals("toast")) { //subString index starts 0 wise, ends length number wise
 				toast1 = i+5;
 
 				for(int j=i+1; j<str1.length()-4; j++) {

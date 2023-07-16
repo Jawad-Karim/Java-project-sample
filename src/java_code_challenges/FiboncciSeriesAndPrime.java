@@ -22,25 +22,5 @@ public class FiboncciSeriesAndPrime {
 			n2 = sum;
 		}
 		System.out.println(fibonacci);
-
-//Prime number is greater than 1 and that has two factors only 1 and itself.
-		int n = 11;
-		int count = 0;
-		if(n>1) {
-			for(int i=1; i<=n; i++) {
-				if(n%i == 0) {
-					count++;
-				}
-			}
-			if(count == 2) {
-				System.out.println(n+" is a Prime number");
-			}
-			else {
-				System.out.println(n+" is not a Prime number");
-			}
-		}
-		else {
-			System.out.println(n+" is not a Prime number");
-		}
 	}
 }

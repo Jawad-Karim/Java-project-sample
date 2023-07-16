@@ -12,8 +12,8 @@ public class Reverse_an_Array {
 		for(int i = 0; i < my_array1.length / 2; i++){
 			
 			int temp = my_array1[i];
-			my_array1[i] = my_array1[my_array1.length - i - 1];
-			my_array1[my_array1.length - i - 1] = temp;
+			my_array1[i] = my_array1[my_array1.length -1 -i];
+			my_array1[my_array1.length -1 -i] = temp;
 		}
 		System.out.println("Reversed array : "+Arrays.toString(my_array1));
 	}
