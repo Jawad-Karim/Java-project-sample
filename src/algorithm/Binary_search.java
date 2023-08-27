@@ -18,16 +18,16 @@ public class Binary_search {
 				break;
 			}
 			else if(search_item > arr[middle]) {
-				firstIndex = middle+1;
+				firstIndex = middle;
 			}
 			else {
-				lastIndex = middle-1;
+				lastIndex = middle;
 			}
 		}
 	}
 
 	public static void main(String[] args) {
-		searchItem(60);
+		searchItem(40);
 
 	}
 }

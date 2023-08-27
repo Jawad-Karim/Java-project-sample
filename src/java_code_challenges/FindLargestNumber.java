@@ -19,9 +19,9 @@ public class FindLargestNumber {
 			System.out.println("c: "+c+" is the largest number");
 		}
 //approach 2
-		int largestNumber = a>(b>c ? b:c) ? a:(b>c ? b:c);
+		int largestNumber = (a>b ? a:b) > c ? (a>b ? a:b) : c;
 		System.out.println(largestNumber);
-
+		
 	}
 
 }

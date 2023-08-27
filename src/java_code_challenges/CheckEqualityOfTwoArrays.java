@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class CheckEqualityOfTwoArrays {
 
 	public static void main(String[] args) {
-//Approach 1
+		//Approach 1
 		int[] a = {1,2,3,4,5};
 		int[] b = {1,2,4,4,5};		
 		boolean status1 = Arrays.equals(a, b);
@@ -13,25 +13,21 @@ public class CheckEqualityOfTwoArrays {
 		}
 		else {
 			System.out.println("arrays are not equal");
-		}		
-//Approach2
-		boolean status2 = true;
+		}
+		
+		//Approach2
+		String status2 = "Arrays are equal";
 		if(a.length == b.length) {
 			for(int i=0; i<a.length; i++) {
-				if(a[i]==b[i]) {
-					status2 = true;
-				}
-				else {
-					status2 = false;
+				if(a[i]!=b[i]) {
+					status2 = "Arrays are not equal in value";
 					break;
-				}
+				}				
 			}
-		}
-		if(status2 == true) {
-			System.out.println("arrays are equal");
-		}
+		}		
 		else {
-			System.out.println("arrays are not equal");
+			System.out.println("arrays are not equal in length");
 		}
+		System.out.println(status2);
 	}
 }

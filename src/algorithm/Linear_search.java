@@ -10,12 +10,13 @@ public class Linear_search {
 		for (int i=0; i<arr.length; i++) {
 			if(arr[i] == search_item) {
 				System.out.println("search item "+arr[i]+" found at position : "+i);
+				break;
 			}
 		}
 	}
 
 	public static void main(String[] args) {
-		searchItem(60);
+		searchItem(40);
 	}
 
 }

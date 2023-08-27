@@ -4,7 +4,7 @@ public class CountCharacterOccurance {
 
 	public static void main(String[] args) {
 
-		//count character occurance
+		//count character occurrence or 'o'
 		String s1 = "Java object oops concepts";
 		String s2 = s1.replace("o", "");
 
