@@ -6,23 +6,25 @@ public class PalindromeOrNot {
 	public static void main(String[] args) {
 	
 //palindrome Integer
-		int n = 12321;
+		int original_num = 12321;
+		int n = original_num;
 		int rev = 0;
 		
 		while(n!=0) {
 			rev = rev*10 + n%10;
 			n = n/10;
 		}
-		System.out.println(rev);
+		System.out.println("original number: "+ original_num);
+		System.out.println("reverse number: "+ rev);
 		
-		if(n==rev) {
+		if(original_num==rev) {
 			System.out.println("palindrome");
 		}
 		else {
 			System.err.println("not palindrome");
 		}
 //palindrome String
-		String s = "Welcome";
+		String s = "loyol";
 		String rvrs = "";
 		for(int i=s.length()-1; i>=0; i--) {
 			rvrs += s.charAt(i);
