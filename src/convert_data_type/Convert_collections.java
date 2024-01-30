@@ -33,6 +33,7 @@ public class Convert_collections {
 		for(int i=0; i<list3.size(); i++) {
 			arr1[i] = list3.get(i);
 		}
+		// list3.toArray(arr1);
 		System.out.println(Arrays.toString(arr1));
 
 
@@ -45,6 +46,7 @@ public class Convert_collections {
 		for(int i=0; i<list4.size(); i++) {
 			arr2[i] = list4.get(i);
 		}
+		// list4.toArray(arr2); not work for int list to int array
 		System.out.println(Arrays.toString(arr2));
 		
 		Object[] obj = list4.toArray();
