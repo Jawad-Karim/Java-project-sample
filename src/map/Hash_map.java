@@ -4,10 +4,10 @@ import java.util.HashMap;
 
 public class Hash_map {
 	/*
-	 Hashmap stores elements as key-value pairs.
-	 key can be null only one time, value can be null multiple time
-	 key can not be duplicate value can be duplicate but not in TreeMap.
-	 does not maintain insertion order.
+	 : Hashmap stores elements as key-value pairs.
+	 : key can be null only one time, value can be null multiple time
+	 : key can not be duplicate (will be overridden) value can be duplicate.
+	 : does not maintain insertion order.
 	 */
 
 	public static void main(String[] args) {
@@ -17,10 +17,14 @@ public class Hash_map {
 
 		// Add keys and values (Country, City)
 		capitalCities.put("Bangladesh", "dhaka");
+		capitalCities.put("Bangladesh", "dha");
+		capitalCities.put("Banglades", "dhaka");
 		capitalCities.put("Finland", "Helsinki");
-		capitalCities.put("Australia", "Sidney");
+		capitalCities.put("Australia", null);
 		capitalCities.put("USA", "Washington DC");
+		capitalCities.put(null, "value for null key");
 		System.out.println(capitalCities);
+		//output: {null=value for null key, Bangladesh=dha, USA=Washington DC, Banglades=dhaka, Finland=Helsinki, Australia=Sidney}
 
 		//access an element
 		capitalCities.get("Finland");
@@ -39,5 +43,9 @@ public class Hash_map {
 		for (String i : capitalCities.keySet()) {
 			System.out.println("key: " + i + "      value: " + capitalCities.get(i));
 		}
+		
+		// containsKey/Value
+				System.out.println("contains USA : "+capitalCities.containsKey("USA"));
+				System.out.println("contains null : "+capitalCities.containsValue(null));		
 	}
 }

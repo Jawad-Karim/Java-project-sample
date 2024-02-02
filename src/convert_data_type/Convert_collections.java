@@ -44,12 +44,13 @@ public class Convert_collections {
 
 		int[] arr2 = new int[list4.size()];
 		for(int i=0; i<list4.size(); i++) {
-			arr2[i] = list4.get(i);
+			//arr2[i] = list4.get(i);
 		}
 		// list4.toArray(arr2); not work for int list to int array
-		System.out.println(Arrays.toString(arr2));
-		
 		Object[] obj = list4.toArray();
+		System.out.println(Arrays.toString(obj));
+		
+		
 
 		// Set to Array, ArrayList ************************************
 		Set<String> set = new HashSet<String>();

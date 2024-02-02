@@ -1,6 +1,11 @@
 package oops.abstraction;
 
 public class Test  extends Animal{
+	
+	//body is provided here.
+		public void eat() {
+			System.out.println("eat method");		
+		}	
 
 	public static void main(String[] args) {
 
@@ -20,9 +25,6 @@ public class Test  extends Animal{
 		t.food();
 	}
 
-	//body is provided here.
-	public void eat() {
-		System.out.println("eat method");		
-	}
+	
 
 }
