@@ -3,9 +3,9 @@ package algorithm;
 import java.util.Arrays;
 /*
  choose an element as pivot, I choose last element of array.
- compare all other values with pivot and swap greater values to pivot index
- pivot value to left and left value to greater value's index.
- then change pivot index into index.
+ compare all other values with pivot value
+ swap greater values to the right and smaller values to the left of pivot index
+ then change pivot index into left index.
  */
 
 public class QuickSort {
