@@ -3,8 +3,11 @@ package algorithm;
 import java.util.Arrays;
 /*
  choose an element as pivot, I choose last element of array.
- compare all other values with pivot value
- swap greater values to the right and smaller values to the left of pivot index
+ compare all other values with pivot value.
+ swap greater values to the right and smaller values to the left of pivot index.
+ change greater values to pivot index.
+ and left of pivot value to greater value index.
+ and pivot value to greater value index.
  then change pivot index into left index.
  */
 
