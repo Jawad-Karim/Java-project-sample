@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class QuickSort {
 
-	static int sort(int[] arr, int leftIndex, int pivotIndex) {
+	static int partition(int[] arr, int leftIndex, int pivotIndex) {
 
 		while(leftIndex<pivotIndex) {
 			if(arr[leftIndex]>=arr[pivotIndex]) {
@@ -28,7 +28,7 @@ public class QuickSort {
 	}
 
 	static void quickSort(int[] arr, int left, int right) {
-		int pi = sort(arr, left, right);
+		int pi = partition(arr, left, right);
 		if(left<pi-1) {
 			quickSort(arr, left, pi-1);
 		}
@@ -40,6 +40,6 @@ public class QuickSort {
 	public static void main(String[] args) {
 		int[] arr = {32, 21, 31, 34, 23, 6, 4, 24, 46, 2, 76, 7, 0, 1};
 		quickSort(arr, 0, arr.length-1);
-		System.out.println(Arrays.toString(arr));
+		System.out.println("sorted arry: "+Arrays.toString(arr));
 	}
 }
